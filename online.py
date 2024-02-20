@@ -59,7 +59,7 @@ def get_news():
 
 def weather_forecast(city):
     res = requests.get(
-        f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=3810ce157979a6513d72df44545c0550"
+        f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=<weathermaptoken>"
     ).json()
     weather = res["weather"][0]["main"]
     temp = res["main"]["temp"]
